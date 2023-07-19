@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><i class="fa-brands fa-square-instagram"></i> Instagram</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- new post and settings buttons-->
+      <div class="d-flex">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Create New Post
+        </button>
+        <div class="btn-group dropstart">
+          <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-target=""
+            aria-expanded="false">
+            <i class="fa-solid fa-gear"></i>
+          </button>
+          <!-- setting dropdown content-->
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">profile</a></li>
+            <li><a class="dropdown-item" href="#">Accessibility</a></li>
+            <li><a class="dropdown-item" href="#">privacy and data</a></li>
+            <li><a class="dropdown-item text-danger" href="#">logout</a></li>
+          </ul>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Create a New Post</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h6>Caption:</h6>
+                  <textarea class="form-control" id="caption-textarea" rows="3"></textarea>
+                  <div class="row">
+                    <div class="col d-flex j m-3">
+                      <button class="btn btn-outline-secondary text-dark m-1"><i
+                          class="fa-solid fa-camera"></i></button>
+                      <button class="btn btn-outline-secondary text-dark m-1"><i
+                          class="fa-solid fa-location-pin"></i></button>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-group dropstart">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="fa-solid fa-gear"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </nav>
+
+
+  <!-- pill row-->
+  <div class="row">
+    <div class="container-fluid d-flex justify-content-center">
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <!--grid button-->
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active show" id="pills-grid-tab" data-bs-toggle="pill" data-bs-target="#pills-grid"
+            type="button" role="tab" aria-controls="pills-grid" aria-selected="true"><i
+              class="fa-solid fa-table-cells"></i></button>
+        </li>
+        <!--scroll button -->
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-scroll-tab" data-bs-toggle="pill" data-bs-target="#pills-scroll"
+            type="button" role="tab" aria-controls="pills-scroll" aria-selected="false"><i
+              class="fa-solid fa-grip-lines-vertical"></i></button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- pills content-->
+  <!-- grid content -->
+
+  
+  <div class="container">
+    <div class="row">
+      <div class="tab-content" id="pills-tabContent">
+        <!-- grid tab start-->
+        <div class="tab-pane fade show active" id="pills-grid" role="tabpanel" aria-labelledby="pills-grid-tab"
+          tabindex="0">
+          <div class="row">
+            <div class="col-4 my-2">
+              <img
+                src="https://images.pexels.com/photos/14958090/pexels-photo-14958090/free-photo-of-aerial-view-of-hills-in-the-death-valley.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                class="card-img-top" alt="mountains">
+            </div>
+            <div class="col-4 my-2">
+              <img
+                src="https://images.pexels.com/photos/17568714/pexels-photo-17568714/free-photo-of-subway-on-sunset.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                class="card-img-top" alt="train">
+            </div>
+            <div class="col-4 my-2">
+              <img
+                src="https://images.pexels.com/photos/17518151/pexels-photo-17518151/free-photo-of-milan-galleria-vittorio-emanuele-ii.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                class="card-img-top" alt="ceiling">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4 my-2">
+              <img
+                src="https://images.pexels.com/photos/17530630/pexels-photo-17530630/free-photo-of-sea-city-landscape-sunset.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                class="card-img-top" alt="boats">
+            </div>
+            <div class="col-4 my-2">
+              <img
+                src="https://images.pexels.com/photos/12857750/pexels-photo-12857750.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                class="card-img-top" alt="sky">
+            </div>
+            <div class="col-4 my-2">
+              <img
+                src="https://images.pexels.com/photos/13856342/pexels-photo-13856342.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                class="card-img-top" alt="homes">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4 my-2">
+              <img
+                src="https://images.pexels.com/photos/12699625/pexels-photo-12699625.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                class="card-img-top" alt="night-sky">
+            </div>
+            <div class="col-4 my-2">
+              <img
+                src="https://images.pexels.com/photos/17505897/pexels-photo-17505897/free-photo-of-telescope-photo-of-ngc-7023-galaxy.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                class="card-img-top" alt="galaxy">
+            </div>
+            <div class="col-4 my-2">
+              <img
+                src="https://images.pexels.com/photos/17465236/pexels-photo-17465236/free-photo-of-summer-pattern-texture-abstract.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                class="card-img-top" alt="plant">
+            </div>
+          </div>
+
+        </div>
+        <!-- grid tab end-->
+        <!-- scroll tab start-->
+        <div class="col-12 d-flex flex-column justify-content-center align-items-center fade" id="pills-scroll" role="tabpanel"
+        aria-labelledby="pills-scroll-tab" tabindex="0">
+          <!--mountains photo -->
+          <div class="card my-3 rounded-0" style="width: 24rem;">
+            <div class="row">
+              <div class="col d-flex flex-row justify-content-between px-4 py-3">
+                <h4>Beautiful Photo</h4>
+                <p>7/24</p>
+              </div>
+            </div>
+            <img
+              src="https://images.pexels.com/photos/14958090/pexels-photo-14958090/free-photo-of-aerial-view-of-hills-in-the-death-valley.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+              class="card-img-top rounded-0" alt="mountains">
+            <div class="card-body">
+              <h6 class="card-title">348 Likes</h6>
+              <p class="card-text">This is a beautiful photo of a desert mountain range. I have no idea where this is, it
+                was a random image from the internet!</p>
+            </div>
+          </div>
+          <div class="card my-3 rounded-0" style="width: 24rem;">
+          <div class="row">
+            <div class="col d-flex flex-row justify-content-between px-4 py-3">
+              <h4>Beautiful Photo</h4>
+              <p>7/24</p>
+            </div>
+          </div>
+          <img
+            src="https://images.pexels.com/photos/17568714/pexels-photo-17568714/free-photo-of-subway-on-sunset.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+            class="card-img-top rounded-0" alt="mountains">
+          <div class="card-body">
+            <h6 class="card-title">348 Likes</h6>
+            <p class="card-text">This is a beautiful photo of a desert mountain range. I have no idea where this is, it
+              was a random image from the internet!</p>
+          </div>
+        </div>
+        <div class="card my-3 rounded-0" style="width: 24rem;">
+          <div class="row">
+            <div class="col d-flex flex-row justify-content-between px-4 py-3">
+              <h4>Beautiful Photo</h4>
+              <p>7/24</p>
+            </div>
+          </div>
+          <img
+            src="https://images.pexels.com/photos/17518151/pexels-photo-17518151/free-photo-of-milan-galleria-vittorio-emanuele-ii.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+            class="card-img-top rounded-0" alt="mountains">
+          <div class="card-body">
+            <h6 class="card-title">348 Likes</h6>
+            <p class="card-text">This is a beautiful photo of a desert mountain range. I have no idea where this is, it
+              was a random image from the internet!</p>
+          </div>
+        </div>
+        <div class="card my-3 rounded-0" style="width: 24rem;">
+          <div class="row">
+            <div class="col d-flex flex-row justify-content-between px-4 py-3">
+              <h4>Beautiful Photo</h4>
+              <p>7/24</p>
+            </div>
+          </div>
+          <img
+            src="https://images.pexels.com/photos/17530630/pexels-photo-17530630/free-photo-of-sea-city-landscape-sunset.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+            class="card-img-top rounded-0" alt="mountains">
+          <div class="card-body">
+            <h6 class="card-title">348 Likes</h6>
+            <p class="card-text">This is a beautiful photo of a desert mountain range. I have no idea where this is, it
+              was a random image from the internet!</p>
+          </div>
+        </div>
+        <div class="card my-3 rounded-0" style="width: 24rem;">
+          <div class="row">
+            <div class="col d-flex flex-row justify-content-between px-4 py-3">
+              <h4>Beautiful Photo</h4>
+              <p>7/24</p>
+            </div>
+          </div>
+          <img
+            src="https://images.pexels.com/photos/17568714/pexels-photo-17568714/free-photo-of-subway-on-sunset.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+            class="card-img-top rounded-0" alt="mountains">
+          <div class="card-body">
+            <h6 class="card-title">348 Likes</h6>
+            <p class="card-text">This is a beautiful photo of a desert mountain range. I have no idea where this is, it
+              was a random image from the internet!</p>
+          </div>
+        </div>
+        <div class="card my-3 rounded-0" style="width: 24rem;">
+          <div class="row">
+            <div class="col d-flex flex-row justify-content-between px-4 py-3">
+              <h4>Beautiful Photo</h4>
+              <p>7/24</p>
+            </div>
+          </div>
+          <img
+            src="https://images.pexels.com/photos/17568714/pexels-photo-17568714/free-photo-of-subway-on-sunset.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+            class="card-img-top rounded-0" alt="mountains">
+          <div class="card-body">
+            <h6 class="card-title">348 Likes</h6>
+            <p class="card-text">This is a beautiful photo of a desert mountain range. I have no idea where this is, it
+              was a random image from the internet!</p>
+          </div>
+        </div>
+
+
+
+        </div>
+        <!-- scroll tab end-->
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
